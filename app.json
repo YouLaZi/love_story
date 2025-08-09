@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Story4Love",
+    "slug": "story4love",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ff6b9d"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.story4love.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "此应用使用面部识别来保护您的私人日记安全",
+        "NSMicrophoneUsageDescription": "此应用需要访问麦克风以录制语音日记",
+        "NSCameraUsageDescription": "此应用需要访问相机以拍摄照片添加到日记中",
+        "NSPhotoLibraryUsageDescription": "此应用需要访问相册以选择照片添加到日记中"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff6b9d"
+      },
+      "package": "com.story4love.app",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "USE_FINGERPRINT",
+        "USE_BIOMETRIC"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-local-authentication",
+      "expo-secure-store"
+    ]
+  }
+}
+
